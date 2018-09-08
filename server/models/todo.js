@@ -1,5 +1,6 @@
 var mongoose = require('mongoose')
 
+mongoose.set('useFindAndModify', false);
 var Todo = mongoose.model('Todo', {
     text: {
       type: String,
